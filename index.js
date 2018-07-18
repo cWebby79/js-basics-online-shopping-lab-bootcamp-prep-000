@@ -46,11 +46,15 @@ function viewCart() {
 
 function total() {
   var total = 0;
-  priceArray = [];
+  var priceArray = [];
   
   for (let i = 0; i < cart.length; i++) {
-    
+    priceArray.push(cart[i].itemPrice);
   }
+  
+  for (var e in priceArray) {
+    total =+ priceArray[i];
+  } return total;
     
   }
 }
