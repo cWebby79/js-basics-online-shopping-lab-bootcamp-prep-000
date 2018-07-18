@@ -52,9 +52,9 @@ function total() {
     priceArray.push(cart[i].itemPrice);
   }
   
-  for (var e in priceArray) {
-    total =+ priceArray[e];
-  } return total;
+  // for (var e in priceArray) {
+  //   total =+ priceArray[e];
+  } return priceArray;
     
   }
 
