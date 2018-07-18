@@ -48,7 +48,7 @@ function total() {
   var total = 0;
   var priceArray = [];
   
-  for (let i = 0; i < cart.length; i++) {
+  for (var i = 0; i < cart.length; i++) {
     priceArray.push(cart[i].itemPrice);
   }
   
