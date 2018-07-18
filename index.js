@@ -45,7 +45,12 @@ function viewCart() {
       
 
 function total() {
-  for (i = 0; i < cart.length; i++) {
+  var total = 0;
+  priceArray = [];
+  
+  for (let i = 0; i < cart.length; i++) {
+    
+  }
     
   }
 }
