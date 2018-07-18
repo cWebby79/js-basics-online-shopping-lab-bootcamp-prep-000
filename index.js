@@ -22,11 +22,11 @@ function viewCart() {
   }else {
     var newArray = [];
     for (var i = 0; i < cart.length; i++) {
-      if (cart.length === 1 ) {
+     
       newArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
       } return `In your cart, you have ${newArray}.`;
     } 
-  }
+  
 }
       
     
