@@ -21,25 +21,15 @@ function viewCart() {
     return `Your shopping cart is empty.`;
   } else {
     var myString = "In your cart, you have "
+    var myArray = [];
     
     for (var i = 0; i < cart.length; i++){
-      
-      for(var list in cart[i]){
-        myString+=`${cart[i].itemName} at $${cart[i].itemPrice}`
-          if(i!==cart.length-1){
-            myString+=", "
-          }
-          else{
-            myString+="."
-          }
-        }
-
-            }
-
-      return `${myString}`;
+      myArray.push(cart.keys);
+    } return myArray;
   }
-
 }
+      
+      
 
 function total() {
   // write your code here
