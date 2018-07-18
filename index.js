@@ -19,8 +19,7 @@ function addToCart(item) {
 function viewCart() {
   if (cart.length === 0) {
     return `Your shopping cart is empty.`;
-  } 
-  else {
+  } else {
     
     var myString = "In your cart, you have ";
     var myArray = [];
@@ -72,6 +71,5 @@ function placeOrder(cardNumber) {
     var newTotal = total();
     cart = [];
     return `Your total cost is $${newTotal}, which will be charged to the card ${cardNumber}.`;
-    
-  }
+    }
 }
