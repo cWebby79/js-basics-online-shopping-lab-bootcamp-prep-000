@@ -20,10 +20,12 @@ function viewCart() {
   if (cart.length === 0) {
     return `Your shopping cart is empty.`;
   } else {
-    var newArray = [];
+    var newArray1 = [];
+    var newArray2 = [];
     for ( let i = 0; i < cart.length; i++) {
-      newArray.push(cart[i].itemName);
-    } return newArray;
+      newArray1.push(cart[i].itemName);
+      newArray2.push(cart[i].itemPrice);
+    } return `${newArray1[i]} at ${newArray2[i]}`
   }
 }
       
