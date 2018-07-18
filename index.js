@@ -30,7 +30,7 @@ function viewCart() {
          newArray.push(`${cart[i].itemName}, ${cart[i].itemPrice}`);
       }
     }
-    }
+    } return newArray;
 }
       
     
