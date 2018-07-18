@@ -24,14 +24,15 @@ function viewCart() {
     var myArray = [];
     
     for (var i = 0; i < cart.length; i++){
-      myArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
+      myArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);}
+      
      if (i === (cart.length-1)) {
        return `${myString} ${myArray}.`;
      } else if (i ===(cart.length-2)) {
        return `${myString} ${myArray}, and `;
      }
   }
-}}
+}
       
       
 
