@@ -22,7 +22,7 @@ function viewCart() {
   } 
   else {
     
-    var myString = "In your cart, you have"
+    var myString = "In your cart, you have "
     var myArray = [];
     
     for (var i = 0; i < cart.length; i++){
