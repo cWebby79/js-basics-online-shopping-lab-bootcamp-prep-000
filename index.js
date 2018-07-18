@@ -28,7 +28,7 @@ function viewCart() {
      if (i === (cart.length-1)) {
        return `${myString} ${myArray}.`;
      } else if (i ===(cart.length-2)) {
-       return `and ${myString} ${myArray}.`;
+       return `${myString} ${myArray} and `;
      }
   }
 }}
