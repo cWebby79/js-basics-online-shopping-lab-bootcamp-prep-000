@@ -28,7 +28,7 @@ function viewCart() {
         newArray1.push(e[0]);
         newArray2.push(e[1]);
       } 
-    } return newArray;
+    } return `${newArray1} at ${newArray2}`
   }
 }
       
