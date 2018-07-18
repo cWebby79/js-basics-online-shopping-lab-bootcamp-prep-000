@@ -24,7 +24,7 @@ function viewCart() {
     var myArray = [];
     
     for (var i = 0; i < cart.length; i++){
-      myArray.push(cart.keys);
+      myArray.push(cart[i].key);
     } return myArray;
   }
 }
