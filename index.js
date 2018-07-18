@@ -23,7 +23,7 @@ function viewCart() {
     var newArray1 = [];
     var newArray2 = [];
     
-    for (i = 0; i < cart.length; i++) {
+    for (var i = 0; i < cart.length; i++) {
       for (var e in cart[i]) {
         newArray1.push(e[0]);
         newArray2.push(e[1]);
