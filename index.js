@@ -20,7 +20,7 @@ function viewCart() {
   if (cart.length === 0) {
     return `Your shopping cart is empty.`;
   } else {
-    newArray = [];
+    var newArray = [];
     for ( let i = 0; i < cart.length; i++) {
       newArray.push(cart[1]);
     } return newArray;
