@@ -25,7 +25,7 @@ function viewCart() {
     for ( let i = 0; i < cart.length; i++) {
       newArray1.push(cart[i].itemName);
       newArray2.push(cart[i].itemPrice);
-    } return `${newArray1[i]} at ${newArray2[i]}`
+    } return `in your cart, you have ${newArray1[i]} at ${newArray2[i]}`
   }
 }
       
