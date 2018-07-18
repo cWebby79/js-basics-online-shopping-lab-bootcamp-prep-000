@@ -26,9 +26,18 @@ function viewCart() {
     var myArray = [];
     
     for (var i = 0; i < cart.length; i++){
-      myArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);}
-
-  } return `${myString} ${myArray}.`;
+      var keys = Object.keys(cart[i])[0]
+      myArray.push(keys + " at $" + cart[i][keys])
+    }
+    if (myArray.length === 1) {
+      myString += myArray + ".";
+    } else if (myArray.length === 2) {
+      myString += (myArray[0] + " and " + myArray[1] + ".");
+    } else if (myArray.length > 2) {
+      var lastE = myArray.pop();
+      var eachE = myArray.join(".");
+      myString += (eachE + ", and " + lastE + ".");
+    } return myString;
 }
       
       
