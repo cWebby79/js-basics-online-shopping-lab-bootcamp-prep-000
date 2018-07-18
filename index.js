@@ -52,9 +52,10 @@ function total() {
     priceArray.push(cart[i].itemPrice);
   }
   
-  for (var e in priceArray) {
-    total =+ priceArray[e];
-  }
+      total = priceArray.reduce(function(a,b) {
+        return a+b;
+      },0);
+  
   
   return total;
     
