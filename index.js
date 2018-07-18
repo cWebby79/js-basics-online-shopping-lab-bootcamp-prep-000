@@ -30,7 +30,7 @@ function viewCart() {
       myArray.push(`${keys} at $${cart[i].itemPrice}`);
     }
     if (myArray.length === 1) {
-      myString += myArray + ".";
+      myString += (`${myArray}.`);
     } else if (myArray.length === 2) {
       myString += (myArray[0] + ", and " + myArray[1] + ".");
     } else if (myArray.length > 2) {
