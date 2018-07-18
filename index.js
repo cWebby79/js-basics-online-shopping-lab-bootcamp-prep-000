@@ -25,7 +25,7 @@ function viewCart() {
     for (var i = 0; i < cart.length; i++){
       
       for(var list in cart[i]){
-        myString+=`${itemName} at $${cart[i][itemPrice]}`
+        myString+=`${cart.itemName} at $${cart[i].itemPrice}`
           if(i!==cart.length-1){
             myString+=", "
           }
