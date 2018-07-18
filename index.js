@@ -32,10 +32,10 @@ function viewCart() {
     if (myArray.length === 1) {
       myString += (`${myArray}.`);
     } else if (myArray.length === 2) {
-      myString += (myArray[0] + ", and " + myArray[1] + ".");
+      myString += (`${myArray[0]}, and ${myArray[1]}.`);
     } else if (myArray.length > 2) {
       var lastE = myArray.pop();
-      var eachE = myArray.join(", ");
+      var eachE = myArray.join(`, `);
       myString += (eachE + ", and " + lastE + ".");
     } return myString;
 }
