@@ -52,8 +52,8 @@ function total() {
     priceArray.push(cart[i].itemPrice);
   }
   
-  // for (var e in priceArray) {
-  //   total =+ priceArray[e];
+  for (var e in priceArray) {
+    total =+ priceArray[e];
   
   return priceArray;
     
