@@ -24,7 +24,8 @@ function viewCart() {
     
     for (var i = 0; i < cart.length; i++) {
       newArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
-    } return `In your cart, you have ${newArray}`;
+    } if (cart.length === 1) { 
+      return `In your cart, you have ${newArray}.`;
     
   } 
 
