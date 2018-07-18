@@ -30,7 +30,7 @@ function viewCart() {
       for (var i = 0; i < cart.length; i++) {
          newArray.push(`${cart[i].itemName}, ${cart[i].itemPrice}`);
       }
-    } return `In your cart, you have ${newArray.itemName} at $${newArray.itemPrice}.`;
+    } return `In your cart, you have ${newArray.key} at $${newArray.value}.`;
     } 
 }
       
