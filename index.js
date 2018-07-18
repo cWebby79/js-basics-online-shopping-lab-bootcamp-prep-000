@@ -45,21 +45,15 @@ function viewCart() {
       
 
 function total() {
-  var total = 0;
   var priceArray = [];
-  
   for (var i = 0; i < cart.length; i++) {
     priceArray.push(cart[i].itemPrice);
   }
-  
-      total = priceArray.reduce(function(a,b) {
-        return a+b;
-      },0);
-  
-  
+  var total = priceArray.reduce(function(a,b) {
+    return a+b;
+    },0);
   return total;
-    
-  }
+}
 
 
 function removeFromCart(item) {
