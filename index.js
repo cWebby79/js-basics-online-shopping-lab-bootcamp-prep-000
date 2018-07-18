@@ -54,7 +54,8 @@ function total() {
   
   // for (var e in priceArray) {
   //   total =+ priceArray[e];
-  } return priceArray;
+  
+  return priceArray;
     
   }
 
