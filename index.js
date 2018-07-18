@@ -35,7 +35,7 @@ function viewCart() {
       myString += (myArray[0] + ", and " + myArray[1] + ".");
     } else if (myArray.length > 2) {
       var lastE = myArray.pop();
-      var eachE = myArray.join(",");
+      var eachE = myArray.join(", ");
       myString += (eachE + ", and " + lastE + ".");
     } return myString;
 }
