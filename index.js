@@ -22,11 +22,11 @@ function viewCart() {
   } 
   else {
     
-    var myString = "In your cart, you have "
+    var myString = "In your cart, you have ";
     var myArray = [];
     
     for (var i = 0; i < cart.length; i++){
-      var keys = (cart[i].itemName)
+      var keys = (cart[i].itemName);
       myArray.push(`${keys} at $${cart[i].itemPrice}`);
     }
     if (myArray.length === 1) {
@@ -36,9 +36,9 @@ function viewCart() {
     } else if (myArray.length > 2) {
       var lastE = myArray.pop();
       var eachE = myArray.join(`, `);
-      myString += (eachE + ", and " + lastE + ".");
+      myString += (`${eachE}, and ${lastE}.`);
     } return myString;
-}
+  }
 }
       
       
