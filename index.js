@@ -23,7 +23,7 @@ function viewCart() {
     newArray = [];
     for ( let i = 0; i < cart.length; i++) {
       newArray.push(cart[1]);
-    }
+    } return newArray;
   }
 }
       
