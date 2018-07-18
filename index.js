@@ -27,7 +27,6 @@ function viewCart() {
       newArray.push(e)
       } 
     } return `${newArray} `
-  }
 }
       
     
