@@ -26,7 +26,7 @@ function viewCart() {
     var myArray = [];
     
     for (var i = 0; i < cart.length; i++){
-      var keys = Object.keys(cart[i])[1]
+      var keys = Object.keys(cart[i])
       myArray.push(keys + " at $" + cart[i][keys])
     }
     if (myArray.length === 1) {
