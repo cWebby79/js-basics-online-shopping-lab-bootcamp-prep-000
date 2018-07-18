@@ -26,7 +26,7 @@ function viewCart() {
       newArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
     } if (cart.length === 1) { 
       return `In your cart, you have ${newArray}.`;
-    
+    }
   } 
 
 }
