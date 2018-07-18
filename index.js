@@ -60,8 +60,8 @@ function removeFromCart(item) {
   for ( var i = 0; i < cart.length; i++) {
     if (cart[i].itemName === item) {
       cart = delete cart[i];
-      return cart;
-    } 
+      
+    } return cart;
   }
 }
 
