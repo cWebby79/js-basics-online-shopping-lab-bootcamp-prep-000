@@ -29,6 +29,7 @@ function viewCart() {
       var keys = (cart[i].itemName);
       myArray.push(`${keys} at $${cart[i].itemPrice}`);
     }
+    
     if (myArray.length === 1) {
       myString += (`${myArray}.`);
     } else if (myArray.length === 2) {
