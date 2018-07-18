@@ -39,6 +39,7 @@ function viewCart() {
       myString += (eachE + ", and " + lastE + ".");
     } return myString;
 }
+}
       
       
 
