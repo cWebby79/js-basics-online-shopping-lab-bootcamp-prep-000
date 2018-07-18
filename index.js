@@ -22,9 +22,8 @@ function viewCart() {
   }else {
     var newArray = [];
     for (var i = 0; i < cart.length; i++) {
-      
-      newArray = `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`;
-      }  return newArray;
+      newArray.push(`In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`);
+      }
     }
   
 }
