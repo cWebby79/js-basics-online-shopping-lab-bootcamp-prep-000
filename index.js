@@ -59,7 +59,7 @@ function total() {
 function removeFromCart(item) {
   for ( var i = 0; i < cart.length; i++) {
     if (cart[i].itemName === item) {
-      cart = [...cart.slice(0,i), ...cart.slice(i+1)];
+      delete cart.item;
       return cart;
     } 
   }
