@@ -22,7 +22,7 @@ function viewCart() {
   } else {
     var newArray = [];
     for ( let i = 0; i < cart.length; i++) {
-      newArray.push(cart[i]);
+      newArray.push(cart.itemName);
     } return newArray;
   }
 }
