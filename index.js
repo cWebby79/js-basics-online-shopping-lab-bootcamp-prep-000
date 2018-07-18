@@ -25,10 +25,12 @@ function viewCart() {
       return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
     } else {
       var newArray = [];
+      
       for (var i = 0; i < cart.length-1; i++) {
-        newArray.push(` ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}`)
+        newArray.push(` ${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}`);
       }
-          var printThreeOrMoreItems = `In your cart, you have${cartItems}, and ${Object.keys(cart[cart.length-1])} at $${cart[cart.length-1][Object.keys(cart[cart.length-1])]}.`
+          return `In your cart, you have${newArray}, and ${Object.keys(cart[cart.length-1])} at $${cart[cart.length-1][Object.keys(cart[cart.length-1])]}.`;
+    }
 }
       
     
