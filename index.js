@@ -20,14 +20,14 @@ function viewCart() {
   if (cart.length === 0) {
     return `Your shopping cart is empty.`;
   } else {
-    var text = "In your cart, you have ";
+    var newArray = [];
     
     for (var i = 0; i < cart.length; i++) {
-      for (var e in cart[i]) {
-        text+=`${e} at $${cart[i][e]}`; 
-      } return text;
+      newArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
     }
-  }
+    
+  } return `In your cart, you have ${newArray}`;
+
 }
       
     
