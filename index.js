@@ -25,7 +25,7 @@ function viewCart() {
     
     for (var i = 0; i < cart.length; i++){
       myArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
-     if (i === cart.length) {
+     if (i === (cart.length-1)) {
        return `${myString} ${myArray}.`;
   }
 }}}
