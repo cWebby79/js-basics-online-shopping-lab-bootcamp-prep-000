@@ -23,7 +23,7 @@ function viewCart() {
   else {
     
     var myString = "In your cart, you have"
-    var myArray = ();
+    var myArray = "";
     
     for (var i = 0; i < cart.length; i++){
       myArray.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);}
