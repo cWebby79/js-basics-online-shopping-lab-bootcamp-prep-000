@@ -26,7 +26,7 @@ function viewCart() {
         items.push(item + " at $" + cart[i][item]);
       }
     }
-    return `In your cart, you have ${items.join(", ")}.`;
+    return `In your cart, you have ${items}`;
   }
 }
       
