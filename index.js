@@ -24,7 +24,7 @@ function viewCart() {
     
     for (var i = 0; i < cart.length; i++) {
       for (var e in cart[i]) {
-        text += `${e} at $${cart[i][e]}`; 
+        text+=`${e} at $${cart[i][e]}`; 
       }
     }
   }
