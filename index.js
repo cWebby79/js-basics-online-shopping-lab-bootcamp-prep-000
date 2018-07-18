@@ -20,15 +20,14 @@ function viewCart() {
   if (cart.length === 0) {
     return `Your shopping cart is empty.`;
   }else {
-    var newArray1 = [];
-    var newArray2 = [];
+    var newArray = [];
+
     
     for (var i = 0; i < cart.length; i++) {
       for (var e in cart[i]) {
-        newArray1.push(e[0]);
-        newArray2.push(e[1]);
+        newArray.push(e)
       } 
-    } return `${newArray1} at ${newArray2}`
+    } return `${newArray} `
   }
 }
       
