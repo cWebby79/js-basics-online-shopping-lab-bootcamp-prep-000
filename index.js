@@ -21,7 +21,8 @@ function viewCart() {
     return `Your shopping cart is empty.`;
   }else {
     for (var i = 0; i < cart.length; i++) {
-      return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`; 
+      var newArray = [];
+      newArray = `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`; 
         
       }
     }
